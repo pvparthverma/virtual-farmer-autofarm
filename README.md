@@ -1,6 +1,6 @@
 advanced virtual farmer (discord bot) autofarm
 
-# ONLY WORKS FOR WINDOWS!!!
+# ONLY WORKS ON WINDOWS!!!
 
 
 Required software for setup:
@@ -8,6 +8,8 @@ Required software for setup:
 https://github.com/UB-Mannheim/tesseract/wiki download the latest version
 
 https://sourceforge.net/projects/mpos/ (not required, but heavily recommended)
+
+Unless you have a 2560x1440 monitor, you **will** have to change the code depending on your monitor resolution
 
 Recent version of Python (I used 3.9)
 
