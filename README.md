@@ -5,15 +5,15 @@ advanced virtual farmer (discord bot) autofarm
 
 Required software for setup:
 
-https://github.com/UB-Mannheim/tesseract/wiki download the latest version
+1. https://github.com/UB-Mannheim/tesseract/wiki download the latest version
 
-https://sourceforge.net/projects/mpos/ (not required, but heavily recommended)
+2. https://sourceforge.net/projects/mpos/ (not required, but heavily recommended)
 
-An autoclicker. I recommend this one https://www.opautoclicker.com/ however I cannot guarantee anything about its safety.
+3. An autoclicker. I recommend this one https://www.opautoclicker.com/ however I cannot guarantee anything about its safety.
+
+4. Recent version of Python (I used 3.9)
 
 Unless you have a 2560x1440 monitor, you **will** have to change the code depending on your monitor resolution
-
-Recent version of Python (I used 3.9)
 
 # Necessary Dependencies
 
