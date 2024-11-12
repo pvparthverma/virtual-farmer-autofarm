@@ -3,7 +3,6 @@
 
 # Once you run the code, set your autoclicker delay to 2.7 seconds, and place it over the 'farm' button.
 
-
 # cv2.cvtColor takes a numpy ndarray as an argument 
 import numpy as nm 
 
@@ -46,6 +45,7 @@ def imToString():
                 pyautogui.typewrite(f"/verify {code}")
                 pyautogui.press("enter")
                 # In case it didn't work the first time (this happened to me once)
+                time.sleep(1)
                 pyautogui.press("enter")
                 time.sleep(2)
 
