@@ -24,6 +24,9 @@ pip install pytesseract
 ```python
 pip install tesseract
 ```
+```python
+pip install Pillow
+```
 Keyboard input sender
 ```python
 pip install pyautogui
