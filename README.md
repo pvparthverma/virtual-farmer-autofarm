@@ -1,4 +1,4 @@
-barbones virtual farmer (discord bot) autofarm
+barebones virtual farmer (discord bot) autofarm
 
 # ONLY WORKS ON WINDOWS!!!
 
