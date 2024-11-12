@@ -1,7 +1,7 @@
 # I cannot take credit for a lot in this program, some was taken from this link: https://www.geeksforgeeks.org/python-using-pil-imagegrab-and-pytesseract/
 # GitHub copilot was also used heavily.
 
-# Once you run the code, set your autoclicker delay to 2.7 seconds, and place it over the 'farm' button.
+# Once you run the code, set your autoclicker delay to 2.7 seconds, and place it over the top right of the 'Farm' button.
 
 # cv2.cvtColor takes a numpy ndarray as an argument 
 import numpy as nm 
