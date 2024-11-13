@@ -15,7 +15,7 @@ Required software for setup:
 
 Unless you have a 2560x1440 monitor, you **will** have to change the code depending on your monitor resolution
 
-# Necessary Dependencies
+# Dependencies
 
 OCR Engine
 ```python
