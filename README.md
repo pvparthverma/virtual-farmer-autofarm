@@ -3,7 +3,7 @@ barebones virtual farmer (discord bot) autofarm
 # ONLY WORKS ON WINDOWS!!!
 
 
-Required software for setup:
+### Required software for setup:
 
 1. https://github.com/UB-Mannheim/tesseract/wiki download the latest version
 
@@ -35,6 +35,4 @@ Computer vision library
 ```python
 pip install opencv-python
 ```
-
-
 
