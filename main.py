@@ -1,11 +1,26 @@
 # I cannot take credit for a lot in this program, some was taken from this link: https://www.geeksforgeeks.org/python-using-pil-imagegrab-and-pytesseract/
 # GitHub copilot was also used heavily.
+# Main difference between this and the 'main' branch is that this one creates a bot that can be used to kill the script if needed.
+# I will not offer support for this branch.
+
 
 # This will only work with OP Autoclicker for Windows.
 # Once you run the code, set your autoclicker delay to 2.7 seconds, and place it over the top right of the 'Farm' button.
 
-# Main difference between this and the 'main' branch is that this one creates a bot that can be used to kill the script if needed.
-# I will not offer support for this branch.
+
+# You most likely WILL have to change these values below to fit your screen resolution, I have a 2560x1440 monitor so these are the values I used. 
+# I used this program: https://sourceforge.net/projects/mpos/
+BoundaryBoxPos1X = 612
+BoundaryBoxPos1Y = 967
+
+BoundaryBoxPos2X = 1450
+BoundaryBoxPos2Y = 1226
+
+FarmButtonPosX = 816
+FarmButtonPosY = 1144
+
+# Create a Discord bot, find the token and replace it below.
+botToken = "REPLACE THIS WITH YOUR BOT TOKEN"
 
 import discord
 from discord.ext import commands
@@ -27,7 +42,7 @@ import re
 # Discord bot setup
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
-botToken = "REPLACE THIS WITH YOUR BOT TOKEN"
+
 
 # Function to kill the script and the task "AutoClicker.exe"
 def kill_script():
@@ -70,9 +85,8 @@ def imToString():
     while True:
         # ImageGrab-To capture the screen image in a loop.  
         # Bbox used to capture a specific area.
-        cap = ImageGrab.grab(bbox=(612, 967, 1450, 1226))
-        # You most likely WILL have to change this value to fit your screen resolution, I have a 2560x1440 monitor so this is the value I used.
-        # I used this program: https://sourceforge.net/projects/mpos/
+        cap = ImageGrab.grab(bbox=(BoundaryBoxPos1X, BoundaryBoxPos1Y, BoundaryBoxPos2X, BoundaryBoxPos2Y))
+
   
         # Converted the image to monochrome for it to be easily  
         # read by the OCR and obtained the output String. 
@@ -99,7 +113,7 @@ def imToString():
                 pyautogui.click(dismiss_location)
                 time.sleep(2)
                 # Teleport the mouse to coordinates 816, 1144. These are the coordinates of the "Farm" button, and will have to change depending on your screen resolution.
-                pyautogui.moveTo(816, 1144)
+                pyautogui.moveTo(FarmButtonPosX, FarmButtonPosY)
 
 # Run the bot and the script
 def run_bot():
