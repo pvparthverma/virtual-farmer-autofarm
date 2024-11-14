@@ -27,6 +27,10 @@ pip install tesseract
 ```python
 pip install Pillow
 ```
+Discord Bot
+```python
+pip install discord.py
+```
 Keyboard input sender
 ```python
 pip install pyautogui
